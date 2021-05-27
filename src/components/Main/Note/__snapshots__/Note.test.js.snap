@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Note should render the Note Component correctly 1`] = `
+<div
+  className="card note-wrapper default-block"
+>
+  <Link
+    to="/note/1"
+  >
+    <div
+      className="note"
+    >
+      <div
+        className="note-header"
+      >
+        <h3>
+          Note title
+        </h3>
+      </div>
+      <div
+        className="note-body"
+      >
+        <p>
+          Note text
+        </p>
+      </div>
+    </div>
+  </Link>
+</div>
+`;

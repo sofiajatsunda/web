@@ -1,0 +1,93 @@
+@import './public/assets/_vars.scss';
+@import './public/assets/_mixins.scss';
+
+body {
+  font-family: $font-primary;
+  color: $primary-text-color;
+  font-weight: 100;
+}
+
+.wrapper {
+  min-height: 100vh;
+  z-index: 1;
+  overflow:auto;
+  background-color:#add8e6;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  padding: 10px;
+}
+
+.default-block {
+  @include default-block;
+  margin-bottom: 20px;
+}
+
+.main-navbar {
+  .navbar-brand {
+    font-size: 30px;
+    font-weight: 400;
+    color: $primary-text-color;
+  }
+
+  .nav-item {
+    font-size: 26px;
+    padding: 12px;
+
+    .nav-link {
+      color: rgba(0,0,0,.7);
+
+      &:hover {
+        color: rgba(0,0,0,1);
+      }
+    }
+  }
+}
+
+.block-title {
+  font-size: 36px;
+  border-bottom: 1px solid #212529;
+  padding: 10px 0;
+}
+
+.default-btn {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .2);
+  background: $secondary-color;
+  border: 0;
+  border-radius: 0;
+  font-size: 18px;
+  color: white;
+
+  &:hover {
+    background: darken($secondary-color, 10);
+    color: white;
+  }
+}
+
+.default-input {
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #8c8c8c;
+  font-size: 16px;
+
+  &:focus {
+    border-color: $secondary-color;
+    outline: none;
+    box-shadow: none;
+  }
+
+  &.error {
+    border-bottom: 1px solid red;
+  }
+}
+.error-message{
+  color:red;
+  font-size: 10px;
+  height: 15px;
+  width: 100%;
+  display: block;
+}

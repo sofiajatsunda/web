@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main should render the Main Component correctly 1`] = `
+<Fragment>
+  <ManageNote
+    editMode={false}
+    isOpened={false}
+    onChangeNote={[Function]}
+    onClosePopup={[Function]}
+  />
+  <button
+    className="add-new-note-btn"
+    onClick={[Function]}
+  />
+  <div
+    className="container-fluid"
+  >
+    <div
+      className=""
+    >
+      <div
+        className="card-columns"
+      />
+    </div>
+  </div>
+</Fragment>
+`;
